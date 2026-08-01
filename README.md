@@ -47,6 +47,7 @@ Schritt 2: PyTorch (CPU-Version) installieren
 Da für die automatische Hintergrundentfernung (KI-Segmentierung) Deep-Learning-Modelle genutzt werden, wird PyTorch benötigt:
 
 ```text
+pip install nobg
 python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
