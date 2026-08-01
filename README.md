@@ -39,19 +39,24 @@ Führen Sie die folgenden Schritte in der PowerShell aus, um die notwendigen Pak
 
 Schritt 1: Pip aktualisieren
 
+```text
 python -m ensurepip --upgrade
+```
 
 Schritt 2: PyTorch (CPU-Version) installieren
 Da für die automatische Hintergrundentfernung (KI-Segmentierung) Deep-Learning-Modelle genutzt werden, wird PyTorch benötigt:
 
+```text
 python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
 
 ### Schritt 3: Weitere Abhängigkeiten installieren
 
 Installieren Sie die Bibliotheken für die KI-Modelle (transformers) und die Bildbearbeitung (pillow):
 
+```text
 python -m pip install transformers pillow
-
+```
 ## 📁 Vorbereitung der Ordnerstruktur (Vorbereitung)
 
 Richten Sie Ihren Projektordner (z. B. D:\Produktfotos) wie folgt ein:
@@ -65,22 +70,14 @@ Hugging Face Token (Optional): Wenn Sie Limitierungswarnungen erhalten, können 
 ## 🏃‍♂️ Ausführung des Skripts (Verwendung)
 Navigieren Sie in der PowerShell in Ihren Projektordner und starten Sie das Skript:
 
+```text
 cd "D:\project"
 python processor.py
+```
 
 ## 📦 Generierte Ausgaben
 Für jedes Bild (z.B. motor.jpg) im Ordner parts_images werden drei Dateien erzeugt:
 
-motor_nobg.pngFreigestelltes Bild mit transparentem Hintergrund (Originalausrichtung).
-motor_white_1080x1080.pngUm 90° nach rechts gedrehtes Produkt, zentriert auf einem weißen 
-1080
-×
-1080
-1080×1080
-px großen Canvas (Nutzgröße 
-880
-×
-880
-880×880
-px, JPG-Format).
+motor_nobg.png Freigestelltes Bild mit transparentem Hintergrund (Originalausrichtung).
+motor_white_1080x1080.png Um 90° nach rechts gedrehtes Produkt, zentriert auf einem weißen 1080 × 1080 px großen Canvas (Nutzgröße 880 × 880 px, JPG-Format).
 motor_white_with_logo_1080x1080.pngDasselbe Bild wie Variante 2, jedoch mit dem Logo (logo.png) oben links bei den Koordinaten (50, 50).
