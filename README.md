@@ -30,6 +30,7 @@ Richten Sie Ihr Projektverzeichnis vor dem Ausführen des Skripts wie folgt ein:
 ├── nobg/ (oder nobg.py)     # Lokales KI-Modul
 ├── logo.png                 # Ihr Firmenlogo (wird auf 100px Breite skaliert)
 └── parts_images/            # Eingabeordner für Original-Produktbilder
+```
 
 Falls python nicht erkannt wird, verwenden Sie alternativ den Befehl py --version.
 
